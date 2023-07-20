@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    .login-container {
+      max-width: 300px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-top: 100px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .login-container label {
+      display: block;
+      margin-bottom: 10px;
+      color: #666;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      background-color: #f8f8f8;
+      transition: border-color 0.3s ease;
+    }
+
+    .login-container input[type="text"]:focus,
+    .login-container input[type="password"]:focus {
+      border-color: #4CAF50;
+    }
+
+    .login-container input[type="submit"] {
+      width: 100%;
+      margin-top: 15px;
+      padding: 10px;
+      background-color: #3498DB;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .login-container input[type="submit"]:hover {
+      background-color: #2980B9;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Login Form</h1>
+    <form action="/login" method="post">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div>
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
